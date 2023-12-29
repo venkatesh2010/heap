@@ -4,6 +4,7 @@
  */
 
 const { Heap } = require('./heap');
+// this is dope, I am able to code from my ipad in an vscode
 
 const getMinCompare = (getCompareValue) => (a, b) => {
   const aVal = typeof getCompareValue === 'function' ? getCompareValue(a) : a;
@@ -34,7 +35,9 @@ class MinHeap {
   insert(value) {
     return this._heap.insert(value);
   }
-
+  addToHeap(value){
+    this._heap.insert("samual")
+  }
   /**
    * Inserts a new value into the heap
    * @public
